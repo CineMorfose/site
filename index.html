@@ -50,10 +50,7 @@ $1
       color: #f1f1f1;
       text-align: center;
     }
-    .episodes {
-      max-width: 800px;
-      margin: 40px auto;
-    }
+    
     .episodes h2 {
       color: #ff3366;
       margin-bottom: 15px;
@@ -68,24 +65,48 @@ $1
       margin-bottom: 15px;
       transition: background 0.3s;
     }
-    .episode:hover {
-      background-color: rgba(255, 51, 102, 0.2);
-    }
-    .episode h3 {
-      margin-bottom: 8px;
-      font-size: 1.2em;
-      color: #ffd700;
-    }
-    .episode p {
-      font-size: 0.95em;
-      color: #ccc;
-    }
+    
+    
+    
     footer {
       text-align: center;
       padding: 20px;
       font-size: 0.9em;
       color: #aaa;
       border-top: 1px solid #444;
+    }
+      .episode-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .episode-card {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid #ff3366;
+      border-radius: 10px;
+      padding: 15px;
+      text-align: center;
+      text-decoration: none;
+      color: #fff;
+      transition: transform 0.3s, background 0.3s;
+    }
+    .episode-card:hover {
+      background-color: rgba(255, 51, 102, 0.15);
+      transform: scale(1.05);
+    }
+    .episode-card h3 {
+      margin-bottom: 8px;
+      font-size: 1.1em;
+      color: #ffd700;
+    }
+    .episode-card p {
+      font-size: 0.95em;
+      color: #ddd;
+    }
+    .episode-card span {
+      font-size: 0.85em;
+      color: #aaa;
     }
   </style>
 </head>
@@ -100,30 +121,34 @@ $1
     </div>
     <div class="episodes">
       <h2>Episódios</h2>
-      <div class="episode">
-        <h3>Episódio 1 – Chaves e facas</h3>
-        <p>Duração: 57 minutos</p>
+      <div class="episode-grid">
+        <a class="episode-card" href="https://drive.google.com/file/d/1dT7lXfaHiu5lsalRaxxBz2UigkJj5rOv/view" target="_blank">
+          <h3>Ep. 1</h3>
+          <p>Chaves e facas<br><span>57 min</span></p>
+        </a>
+        <a class="episode-card" href="https://drive.google.com/file/d/18i7iXMIisouf7SYAsJ_rPlCjqz1e9TlV/view?t=2" target="_blank">
+          <h3>Ep. 2</h3>
+          <p>Noite estrelada<br><span>60 min</span></p>
+        </a>
+        <a class="episode-card" href="https://drive.google.com/file/d/1EShqTltswxSTWY204sI45CKldrlKbOhE/view" target="_blank">
+          <h3>Ep. 3</h3>
+          <p>Não é culpa sua<br><span>66 min</span></p>
+        </a>
+        <a class="episode-card" href="https://drive.google.com/file/d/1qLYcOsx81QYBVHUME448yvTqfclB0idB/view?t=2" target="_blank">
+          <h3>Ep. 4</h3>
+          <p>222<br><span>66 min</span></p>
+        </a>
+        <a class="episode-card" href="https://drive.google.com/file/d/1CYnj6JIOAmJpftmALhdnRXSRnl6PEgq6/view" target="_blank">
+          <h3>Ep. 5</h3>
+          <p>○△□<br><span>62 min</span></p>
+        </a>
+        <a class="episode-card" href="https://drive.google.com/file/d/1IOBB1NFJd_PmDFuJ3trnoFsw2n-2yiC-/view" target="_blank">
+          <h3>Ep. 6</h3>
+          <p>Humanos<br><span>55 min</span></p>
+        </a>
       </div>
-      <div class="episode">
-        <h3>Episódio 2 – Noite estrelada</h3>
-        <p>Duração: 60 minutos</p>
-      </div>
-      <div class="episode">
-        <h3>Episódio 3 – Não é culpa sua</h3>
-        <p>Duração: 66 minutos</p>
-      </div>
-      <div class="episode">
-        <h3>Episódio 4 – 222</h3>
-        <p>Duração: 66 minutos</p>
-      </div>
-      <div class="episode">
-        <h3>Episódio 5 – ○△□</h3>
-        <p>Duração: 62 minutos</p>
-      </div>
-      <div class="episode">
-        <h3>Episódio 6 – Humanos</h3>
-        <p>Duração: 55 minutos</p>
-      </div>
+    </div>
+      
     </div>
     <footer>
       © 2025 Cinemorfose — Round 6 Temporada 3.
